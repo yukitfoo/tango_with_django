@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+    <head>
+        <!-- this is the tab name -->
+        <title>Rango</title>
+    </head>
+
+    <body>
+        <!-- this is the header -->
+        <h1>Rango says...</h1>
+        <div>
+            hey there partner! <br />
+            <!-- think of it as placeholder -->
+            <strong>{{ boldmessage }}</strong><br />
+        </div>
+        <div>
+            <!-- links to the about page -->
+            <a href="/rango/about/">About</a><br />
+            <img src="{% static 'images/rango.jpg' %}"
+                alt="Picture of Rango" />
+        </div>
+    </body>
+</html>
